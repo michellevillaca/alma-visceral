@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background-color: rgb(205, 13, 13);
+    background-color: rgb(108, 0, 0);
     color: white;
     text-align: center;
 }
@@ -42,7 +42,7 @@ header > p {
 }
 
 nav {
-    background-color: rgb(205, 13, 13);
+    background-color: rgb(108, 13, 13);
     padding: 5px;
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.207);
     display: flex;
@@ -50,7 +50,7 @@ nav {
 
 nav a {
     background-color: rgb(255, 255, 255);
-    color: rgb(178, 0, 0);
+    color: rgb(108, 0, 0);
     text-decoration: none;
     font-weight: 600;
     padding: 10px 10px;
@@ -61,10 +61,16 @@ nav a {
     text-align: center;
 }
 
+nav:hover {
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.407);
+    transition: all 0.4s ease;
+}
+
 nav a:hover {
-    background-color: rgb(178, 0, 0);
+    background-color: rgb(158, 0, 0);
     color: white;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.207);
+    transition: all 0.4s ease;
 }
 
 header > h1 {
@@ -91,6 +97,22 @@ section {
 section.simples {
     background-color: white;
     color: black;
+    line-height: 1.9;
+}
+
+section.simples:hover {
+  background-color: rgba(255, 255, 255, 0.967); /* Transparência mais leve */
+  backdrop-filter: blur(6px);            /* Suaviza o fundo */
+  color: rgb(0, 0, 0);
+  line-height: 1.9;
+  transition: all 0.5s ease;transform: scale(1.01);
+}
+
+section.simples img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 section#img01 {
@@ -101,7 +123,63 @@ section#img01 {
 }
 
 section#img02 {
-    background-image: url(imagens/troco.jpg);
+    background-image: url(imagens/Dinheiro.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img03 {
+    background-image: url(imagens/trem.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img04 {
+    background-image: url(imagens/beija-flor.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img05 {
+    background-image: url(imagens/alienated.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img06 {
+    background-image: url(imagens/livro.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img07 {
+    background-image: url(imagens/galaxy.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img08 {
+    background-image: url(imagens/mars.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img09 {
+    background-image: url(imagens/esgoto.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img10 {
+    background-image: url(imagens/solitude.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,12 +194,24 @@ section.imagem {
 }
 
 section.imagem .caixa-poema {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.514);
-    padding: 10px;
-    border-radius: 10px;
-    text-shadow: 1px 1px 0px black;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.35); /* Transparência mais leve */
+  backdrop-filter: blur(6px);            /* Suaviza o fundo */
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  color: white;
+  max-width: 600px;                     /* Mantém o texto legível em telas grandes */
+  line-height: 1.9;
+  transition: all 0.3s ease;            /* Suaviza qualquer mudança (ex: hover) */
 }
+
+section.imagem .caixa-poema:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+  transform: scale(1.01);               /* Dá leve destaque quando o mouse passa */
+}
+
 
 section > p.direita {
     font-size: 1.5vw;
@@ -130,7 +220,7 @@ section > p.direita {
 }
 
 footer {
-    background-color: rgb(205, 13, 13);
+    background-color: rgb(108, 13, 13);
     color: white;
     font-size: 0.85em;
     text-align: center;
