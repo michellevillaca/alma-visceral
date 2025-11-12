@@ -77,7 +77,10 @@ header > h1 {
     padding-top: 50px;
     font-family: var(--fonte4);
     font-variant: small-caps;
-    font-size: 10vw;
+    font-size: clamp(2rem, 10vw, 10rem); /* O tamanho será:
+    2rem em telas pequenas
+    10vw em telas médias
+    10rem em telas grandes */
 }
 
 header > p {
@@ -91,7 +94,7 @@ section {
     line-height: 2em;
     padding-left: 35px;
     font-family: var(--fonte2);
-    font-size: 1.9vw;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 section.simples {
@@ -229,6 +232,13 @@ section#img16 {
 
 section#img17 {
     background-image: url(imagens/driving.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img18 {
+    background-image: url(imagens/fadingaway.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
