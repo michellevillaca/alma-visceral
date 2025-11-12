@@ -244,12 +244,24 @@ section#img18 {
     background-size: cover;
 }
 
+section#img19 {
+    background-image: url(imagens/crowd.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img20 {
+    background-image: url(imagens/deadrose.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 0px  rgba(0, 0, 0, 0.473);
-    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -262,7 +274,7 @@ section.imagem .caixa-poema {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
   color: white;
-  max-width: 550px;                     /* Mantém o texto legível em telas grandes */
+  max-width: 550px;   /* Mantém o texto legível em telas grandes */
   line-height: 1.9;
   transition: all 0.3s ease;            /* Suaviza qualquer mudança (ex: hover) */
 }
