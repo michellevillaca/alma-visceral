@@ -272,6 +272,13 @@ section.imagem {
     background-attachment: fixed;
 }
 
+/* Corrige apenas no Safari/iOS */
+@supports (-webkit-touch-callout: none) {
+  section.imagem {
+    background-attachment: scroll;
+  }
+}
+
 section.imagem .caixa-poema {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.35); /* Transparência mais leve */
